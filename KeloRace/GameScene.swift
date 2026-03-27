@@ -192,8 +192,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     // MARK: - Setup Player
     func setupPlayer() {
-        player.position = CGPoint(x: frame.midX, y: -420)
-        player.size = CGSize(width: 80, height: 150)
+        player.position = CGPoint(x: frame.midX, y: -500)
+        player.size = CGSize(width: 40, height: 80)
         
         player.physicsBody = SKPhysicsBody(circleOfRadius: 20)
         player.physicsBody?.isDynamic = true
@@ -208,7 +208,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // MARK: - Setup Finish Line
     func setupFinishLine() {
         finishLine.position = CGPoint(x: frame.midX, y: 500)
-        finishLine.size = CGSize(width: 800, height: 80)
+        finishLine.size = CGSize(width: 850, height: 80)
         
         finishLine.physicsBody = SKPhysicsBody(rectangleOf: finishLine.size)
         finishLine.physicsBody?.isDynamic = false
@@ -226,7 +226,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         enumerateChildNodes(withName: "//obstacleHit") { node, _ in
             guard let sprite = node as? SKSpriteNode else { return }
             
-            sprite.alpha = 0 // invisible tapi tetap ada collision
+//            sprite.alpha = 0 // invisible tapi tetap ada collision
             sprite.physicsBody = SKPhysicsBody(rectangleOf: sprite.size)
             sprite.physicsBody?.isDynamic = false
             sprite.physicsBody?.affectedByGravity = false
