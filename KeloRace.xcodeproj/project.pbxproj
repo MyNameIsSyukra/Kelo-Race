@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3FA8789F2F73DC2B00518658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA8789D2F73DC2B00518658 /* Assets.xcassets */; };
+		3FA878A02F73DC2B00518658 /* TileSets.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FA8789E2F73DC2B00518658 /* TileSets.sks */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3FA878672F6945F700518658 /* KeloRace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeloRace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA8789D2F73DC2B00518658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FA8789E2F73DC2B00518658 /* TileSets.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSets.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3FA878892F738CDD00518658 /* Exceptions for "KeloRace" folder in "KeloRace" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3FA878662F6945F700518658 /* KeloRace */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3FA878692F6945F700518658 /* KeloRace */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3FA878892F738CDD00518658 /* Exceptions for "KeloRace" folder in "KeloRace" target */,
+			);
 			path = KeloRace;
 			sourceTree = "<group>";
 		};
@@ -32,6 +52,8 @@
 		3FA8785E2F6945F700518658 = {
 			isa = PBXGroup;
 			children = (
+				3FA8789D2F73DC2B00518658 /* Assets.xcassets */,
+				3FA8789E2F73DC2B00518658 /* TileSets.sks */,
 				3FA878692F6945F700518658 /* KeloRace */,
 				3FA878682F6945F700518658 /* Products */,
 			);
@@ -109,6 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA8789F2F73DC2B00518658 /* Assets.xcassets in Resources */,
+				3FA878A02F73DC2B00518658 /* TileSets.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +279,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4AHF6V5W4Q;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KeloRace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -287,6 +312,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4AHF6V5W4Q;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KeloRace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
