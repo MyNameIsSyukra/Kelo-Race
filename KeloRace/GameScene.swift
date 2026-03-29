@@ -194,6 +194,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func setupPlayer() {
         player.position = CGPoint(x: frame.midX, y: -500)
         player.size = CGSize(width: 40, height: 80)
+        player.zPosition = 3
         
         player.physicsBody = SKPhysicsBody(circleOfRadius: 20)
         player.physicsBody?.isDynamic = true
